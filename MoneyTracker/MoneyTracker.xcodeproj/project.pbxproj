@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		09EA5BC82E059C2000383BF9 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09EA5BC82E059C2000383BF9 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MoneyTracker.app; path = "/Users/breadenbilly/Desktop/Swift/MoneyTracker/MoneyTracker/build/Debug-iphoneos/MoneyTracker.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,16 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				09EA5BCA2E059C2000383BF9 /* MoneyTracker */,
-				09EA5BC92E059C2000383BF9 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		09EA5BC92E059C2000383BF9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09EA5BC82E059C2000383BF9 /* MoneyTracker.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +99,7 @@
 			mainGroup = 09EA5BBF2E059C2000383BF9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 09EA5BC92E059C2000383BF9 /* Products */;
+			productRefGroup = 09EA5BBF2E059C2000383BF9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -150,7 +141,6 @@
 				INFOPLIST_FILE = MoneyTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +168,6 @@
 				INFOPLIST_FILE = MoneyTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
