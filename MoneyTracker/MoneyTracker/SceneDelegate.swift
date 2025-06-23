@@ -13,12 +13,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+            // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+            // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+            // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+            guard let scene = (scene as? UIWindowScene) else { return }
+            window = UIWindow(windowScene: scene)
+        
+        let tabBarController = UITabBarController()
+        
+        let viewControllerMain = ViewControllerMain()
+        viewControllerMain.tabBarItem = UITabBarItem(title: "Main", image: UIImage(systemName: "creditcard"), selectedImage: UIImage(systemName: "creditcard.fill"))
+        let navigationControllerMain = UINavigationController(rootViewController: viewControllerMain)
+        
+        let viewControllerHistory = ViewControllerHistory()
+        viewControllerHistory.tabBarItem = UITabBarItem(title: "History", image: UIImage(systemName: "list.bullet"), selectedImage: UIImage(systemName: "list.bullet"))
+        let navigationControllerHistory = UINavigationController(rootViewController: viewControllerHistory)
+        
+        let viewControllerSettings = ViewControllerHistory()
+        viewControllerSettings.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), selectedImage: UIImage(systemName: "gear"))
+        let navigationControllerSettings = UINavigationController(rootViewController: viewControllerSettings)
+        
+        tabBarController.viewControllers = [
+            navigationControllerMain,
+            navigationControllerHistory,
+            navigationControllerSettings
+        ]
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
