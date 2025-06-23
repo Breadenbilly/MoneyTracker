@@ -11,8 +11,14 @@ class ViewControllerHistory: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(goNext))
     }
     
-    
+    @objc
+    func goNext() {
+        let navigationOpened = NavigationHistory()
+        navigationController?.pushViewController(navigationOpened, animated: true)
+        
+    }
 }
