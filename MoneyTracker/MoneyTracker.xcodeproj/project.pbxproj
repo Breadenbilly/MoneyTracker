@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		09EA5BC82E059C2000383BF9 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MoneyTracker.app; path = "/Users/breadenbilly/Desktop/Swift/MoneyTracker/MoneyTracker/build/Debug-iphoneos/MoneyTracker.app"; sourceTree = "<absolute>"; };
+		0930E1172E0948DE0018075A /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				09EA5BCA2E059C2000383BF9 /* MoneyTracker */,
+				0930E1172E0948DE0018075A /* MoneyTracker.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = MoneyTracker;
-			productReference = 09EA5BC82E059C2000383BF9 /* MoneyTracker.app */;
+			productReference = 0930E1172E0948DE0018075A /* MoneyTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
